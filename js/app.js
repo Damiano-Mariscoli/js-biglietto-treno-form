@@ -22,7 +22,13 @@ form.addEventListener('submit', function (event) {
 
     }
     prezzo = prezzo - scontoAdvanced
-
+    nodeP = document.querySelectorAll('p')
+    console.log(nodeP)
+    
+    for (i = 0 ; i < nodeP.length; i ++)
+        nodeP[i].textContent = ''
+    
+    
     console.log(`il prezzo del tuo biglietto è: ${prezzo.toFixed(2)}$`)
 
 
@@ -35,7 +41,8 @@ form.addEventListener('submit', function (event) {
     document.body.appendChild(textAge)
 
     const textPrice = document.createElement('p')
-    textPrice.textContent = `il prezzo del tuo biglietto è ${prezzo} $`
+    textPrice.textContent = `il prezzo del tuo biglietto è ${prezzo.toFixed(2)} $`
     document.body.appendChild(textPrice)
+    document.querySelectorAll('p')
 })
 
