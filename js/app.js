@@ -77,7 +77,7 @@ form.addEventListener('submit', function (event) {
     row.appendChild(colPrice)
 
     const textKm = document.createElement('p');
-    textKm.className = 'text-light'                          //inserisco l'output del programma
+    textKm.className = 'text-light'                         //inserisco l'output del programma
     textKm.textContent = `KM: ${kmField.value}`             //in questo caso sono 3 paragrafi 2 inseriti nella prima colonna e 1 inserito nella seconda colonna
     colInfo.appendChild(textKm)
 
