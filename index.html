@@ -9,25 +9,34 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color: #181a1b;">
 
     <section id="add-element" class="mt-4">
-        <h2 class="mb-3">Aggiungi un nuovo elemento</h2>
-        <form action="" method="get" id="form">
-            <div class="mb-3">
-                <label for="input-km">chilometri</label>
-                <input id="input-km" type="number">
-                
-            </div>
-
-            <div class="mb-3">
-                <label for="input-age">eta</label>
-                <input id="input-age" type="number">
-                
-            </div>
+        <h2 style="color: #0d6efd" class="mb-3 text-center">CALCOLA IL PREZZO DEL TUO VIAGGIO</h2>
+        <div class="container">
             
-            <button type="submit" class="btn btn-primary">Aggiungi</button>
-        </form>
+            <form class="row d-flex justify-content-center" action="" method="get" id="form">
+                <div class="mb-3 col d-flex flex-column">
+                    <label class="text-light" for="input-km">Chilometri (KM)</label>
+                    <input id="input-km" type="number">
+
+                </div>
+
+                <div class="mb-3 col d-flex flex-column">
+
+                    <label class="text-light" for="input-age">Età</label>
+                    <input id="input-age" type="number">
+
+                </div>
+                
+                <div>
+
+                    <button type="submit" class="btn btn-primary w-100 col">Aggiungi</button>
+
+                </div>
+            </form>
+        </div>
+
     </section>
 
 
