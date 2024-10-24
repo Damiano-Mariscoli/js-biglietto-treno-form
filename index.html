@@ -11,33 +11,62 @@
 
 <body style="background-color: #181a1b;">
 
-    <section id="add-element" class="mt-4">
+    <section id="add-element" class="mt-4 ">
         <h2 style="color: #0d6efd" class="mb-3 text-center">CALCOLA IL PREZZO DEL TUO VIAGGIO</h2>
         <div class="container">
-            
+
             <form class="row d-flex justify-content-center" action="" method="get" id="form">
+
+                <div class="mb-3 col d-flex flex-column">
+
+                    <label class="text-light" for="input-name">Nome</label>
+                    <input name="user" id="input-name" type="text">
+
+                </div>
                 <div class="mb-3 col d-flex flex-column">
                     <label class="text-light" for="input-km">Chilometri (KM)</label>
-                    <input id="input-km" type="number">
-
+                    <input name="KM" id="input-km" type="number">
                 </div>
 
                 <div class="mb-3 col d-flex flex-column">
 
                     <label class="text-light" for="input-age">Età</label>
-                    <input id="input-age" type="number">
+                    <input name="age" id="input-age" type="number">
 
                 </div>
                 
-                <div>
 
-                    <button type="submit" class="btn btn-primary w-100 col">Calcola</button>
-
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary w-100">Calcola</button>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <button type="reset" class="btn btn-warning w-100">Annulla</button>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <button id="btnReset" type="button" class="btn btn-danger w-100">Reset</button>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
-
     </section>
+    <section class="ticket">
+        <div id="maincard" class="container d-none">
+            <div class="card mt-3 p-3 bg-dark">
+                <div class="row d-flex">
+                    <div class="col">
+                        <span class="review-ticket"></span>
+                    </div>
+                    <div class="col">
+                        <span class="review-price"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
